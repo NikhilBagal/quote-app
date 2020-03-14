@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,300;1,600&display=swap');
+
+.wrapper {
+    border: none;
+    border-radius: 5px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% ,-40%);
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.quote-txt h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.quote-txt p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
