@@ -1,15 +1,15 @@
 import React from 'react';
 
 function Buttons(props){
+    const txt = `${props.text}  Author- ${props.authorName}`
     return(
-        <div className="button-sec">
-            <button onClick={props.handleClick}>Generate</button>
-            <button>
-            <a class="twitter-share-button"
-                href={`https://twitter.com/intent/tweet?text=${props.text}`}
-                data-size="large">
-                Tweet</a>
-            </button>
+        <div className="btn-sec">
+            <button className="gen-btn" onClick={props.handleClick}>New Quote</button>
+            <a className="twitter-link"
+                    href={`https://twitter.com/intent/tweet?text=${txt}`}
+                    data-size="large" target="_blank" rel="noopener noreferrer">
+                        <i className="fa fa-twitter" aria-hidden="true">Tweet</i>
+            </a>
         </div>
     )
 }
